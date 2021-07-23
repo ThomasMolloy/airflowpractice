@@ -12,6 +12,7 @@ def generate_DB():
     fighter_df.drop(columns=['CareerStats'], inplace=True)
     temp_df.drop(columns=['FirstName','LastName'], inplace=True)
     fighter_df = pd.merge(fighter_df,temp_df,on='FighterId')
+    #adding this comment for git practice
 
     '''
     Obtain mysql database information and create/insert fighter info dataframe into table
